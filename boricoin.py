@@ -36,7 +36,6 @@ def create_chain(block_amount):
         transaction_list.append(names.get_full_name() + " sends " + str(round(random.uniform(0, 1000), 2)) + " BoriCoins to "
                                 + names.get_full_name())
 
-    return
 
     for j in range(block_amount):
 
@@ -59,6 +58,7 @@ def create_chain(block_amount):
 
 
 def print_transaction_history(history, block_amount):
+
     j = 0
     with open('ledger.txt', 'w') as f:
         print("Printing the history of the " + str(block_amount) + " transactions using BoriCoin in the following format:\n" \
